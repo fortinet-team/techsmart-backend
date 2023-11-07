@@ -20,6 +20,46 @@ git branch -M main
 git push -uf origin main
 ```
 
+## Getting started
+
+Pastikan komputer lokal anda sudah terinstal **docker** untuk menjalankan database MySQL, agar tidak perlu mengatur MySQL yang sudah ada.
+
+
+## Environment Setup
+
+- Buat python virtual environment **.venv** di root directory project, (**.venv** sudah ada di .gitignore)
+    ```
+    python -m venv .venv
+    ```
+    OR
+    ```
+    python3 -m venv .venv
+    ```
+
+- Jalankan virtual environment **.venv**
+    ```
+    . .venv/bin/activate
+    ```
+    Untuk keluar dari virtual environment:
+    ```
+    deactivate
+    ```
+
+## Run local server
+```
+python manage.py runserver
+```
+OR
+```
+python3 manage.py runserver
+```
+
+## Committing Your Changes
+> Selalu gunakan commit message yang jelas. Dalam konteks OOP, awali dengan nama **model**, lalu **method**, lalu **nama_file**, lalu deskripsikan perubahan/penambahan yang dilakukan:
+```
+git commit -m "tours:tour_details@mengubah json response"
+
+
 ## Integrate with your tools
 
 - [ ] [Set up project integrations](https://gitlab.com/nabeelarrafi/techsmart-backend/-/settings/integrations)
