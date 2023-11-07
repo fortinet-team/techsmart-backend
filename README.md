@@ -25,14 +25,22 @@ Pastikan di perangkat kalian telah terinstall MySQL atau PostgreSQL untuk databa
 
 - Jalankan virtual environment **.venv**
     ```
-    . .venv/bin/activate
+    .venv/bin/activate
     ```
     Untuk keluar dari virtual environment:
     ```
     deactivate
     ```
 
-## Set up database
+## Database Setup
+- Paket yang perlu di install jika ingin menggunakan MySQL :
+    ```
+    pip install mysqlclient
+    ```
+    Paket yang perlu di install jika ingin menggunakan PostgreSQL :
+    ```
+    pip install psycopg2
+    ```
 
 - Jika ingin menggunakan PostgreSQL, ubah kodingan **settings.py** seperti dibawah ini :
     ```
@@ -66,6 +74,11 @@ Pastikan di perangkat kalian telah terinstall MySQL atau PostgreSQL untuk databa
     ```
     python manage.py makemigrations
     python manage.py migrate
+    ```
+    OR
+    ```
+    python3 manage.py makemigrations
+    python3 manage.py migrate
     ```
 
 
