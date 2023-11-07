@@ -20,11 +20,6 @@ git branch -M main
 git push -uf origin main
 ```
 
-## Getting started
-
-Pastikan komputer lokal anda sudah terinstal **docker** untuk menjalankan database MySQL, agar tidak perlu mengatur MySQL yang sudah ada.
-
-
 ## Environment Setup
 
 - Buat python virtual environment **.venv** di root directory project, (**.venv** sudah ada di .gitignore)
@@ -58,6 +53,7 @@ python3 manage.py runserver
 > Selalu gunakan commit message yang jelas. Dalam konteks OOP, awali dengan nama **model**, lalu **method**, lalu **nama_file**, lalu deskripsikan perubahan/penambahan yang dilakukan:
 ```
 git commit -m "tours:tour_details@mengubah json response"
+```
 
 
 ## Integrate with your tools
